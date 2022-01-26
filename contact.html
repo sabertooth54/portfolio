@@ -13,36 +13,36 @@
 
 
 <body>
-<header>
-    <img class="img-cac" src="img/cactus.png" alt="cactus">
-
-    <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-            <li role="presentation">
-                <a href="index.html" role="menuitem" class="navigation-
-                list__item navigation-list__item--active">Home</a>
-            </li>
-            <li role="presentation">  
-                <a href="about.html" role="menuitem" class="navigation-
-                navigation-list__item--active">About me</a>
-            </li> 
-            <li role="presentation">   
-                <a href="contact.html" role="menuitem" class="navigation-
-                navigation-list__item--active">Contact</a>
-            </li>
-            <li role="presentation">
-                <a href="work.html" role="menuitem" class="navigation-
-                navigation-list__item--active">Work</a>
-            </li>
-        </ul> 
-    </nav> 
-</header>    
-    <div>
+    <header class="page-header">
+        <img src="img/favicon.png" class="profile__portrait_" alt="vgg portrait">
+    
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-
+                    list__item navigation-list__item--active">Home</a>
+                </li>
+                <li role="presentation">  
+                    <a href="about.html" role="menuitem" class="navigation-
+                    navigation-list__item">About me</a>
+                </li> 
+                <li role="presentation">   
+                    <a href="contact.html" role="menuitem" class="navigation-
+                    navigation-list__item">Contact</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-
+                    navigation-list__item">Work</a>
+                </li>
+            </ul> 
+        </nav> 
+    </header>   
+    <div class="contact-heading"><h1>Contact</h1></div>  
+    <div class="form-container">
         <!--Add your Portrait here-->
         <img class="img-cac" src="img/cactus.png" alt="cactus">
-        <h1>Contact</h1>
 
-        <form method="post">
+        <form class="form" method="post">
             <label class="standard-label" for="contact-email">Email: </label>
             <input type="email" id="contact-email" required>
 
@@ -50,11 +50,13 @@
             <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
 
             <label class="standard-label" for="contact-message">Message: </label>
-            <textarea required maxlength="240"></textarea>
-            <input type="submit" id="contact-message" value="Send message">
+            <textarea class="leave-comment" required maxlength="240"></textarea>
+            <input class="btn" type="submit" id="contact-message" value="Send message">
         </form>
-    <br>
-        <div>
+ 
+    </div> 
+    <footer class="main-footer">
+        <div class="main-footer-left">
             P&J Gmbh<br>
             Mühlgasse 55<br>
             10179 Berlin<br>
@@ -66,12 +68,16 @@
             <a href="mailto:office@pandj.com">Contact me</a>
             <a class="link">contact</a>
         </div>
-    </div> 
-    <footer>
-        <p>Find me on</p>
-        <img src="img/github_icon.svg" alt="Github">
-        <img src="img/twitter_icon.svg" alt="Twitter">
-        <img src="img/linkedin_icon.svg" alt="LinkedIn">
+        <div class="main-footer-right">
+            <p>Find me on</p>
+            <div class="footer-ic">
+                <img src="img/github_icon.svg" alt="Github">
+                <img src="img/twitter_icon.svg" alt="Twitter">
+                <img src="img/linkedin_icon.svg" alt="LinkedIn">
+            </div>
+           
+        </div>
+        
     </footer> 
 
     <script src="js/tota11y.min.js"></script>
