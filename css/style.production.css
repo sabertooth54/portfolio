@@ -110,6 +110,7 @@ button:focus {
   float: left;
   width: 60px;
   margin-left: 40px;
+  padding-top: 6px;
 }
 
 .page-footer {
@@ -127,6 +128,11 @@ button:focus {
 .profile {
   max-width: 700px;
   margin: 0 auto;
+}
+
+.profile,
+h1 {
+  padding-right: 23.9px;
 }
 
 .profile__portrait {
@@ -470,4 +476,8 @@ h1 {
 .footer-icons {
   display: flex;
   justify-content: space-between;
+}
+
+.code-link {
+  color: white;
 }
